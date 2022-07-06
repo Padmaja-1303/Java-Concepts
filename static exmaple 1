@@ -1,0 +1,16 @@
+class Car
+{
+    String name;
+    String getName()
+    {
+        return name; //null value
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    Car c = new Car();
+		System.out.println(c.getName());
+	}
+}
