@@ -1,0 +1,24 @@
+/**/
+public class Student1
+{
+    int rollno;
+    static String name;
+    String collegename = "IIT";
+    void set(int r,String s)
+    {
+        rollno = r;
+        name =s;
+    }
+    void put()
+    {
+        System.out.println("roll no:"+ rollno);
+        System.out.println("name:"  + name);
+        System.out.println("College name:" + collegename);
+    }
+	public static void main(String[] args) 
+	{
+	    Student1 s1 = new Student1();
+	    s1.set(1,"Zoho");
+	    s1.put();
+	}
+}
