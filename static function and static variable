@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Main
+{
+    int rollno; //default values (0)
+    static String name; //default values (null)
+    static String collegename ="IIT";
+    void set(int r,String s)
+    {
+        rollno = r;
+        name = s;
+    }
+    void put()
+    {
+        System.out.println("rollno:" + rollno);
+        System.out.println("name and college name:" + name +" " + collegename);
+    }
+    static void change() //static function can change only static variables
+    {
+        name = "HOD";
+        collegename = "Prince Dr K Vasudevan College";
+    }
+	public static void main(String[] args) 
+	{
+	    Main m1 = new Main(); //m1  - object
+	    m1.set(1,"Ramesh");
+	    m1.put();
+	    m1.change();
+	    m1.put();
+		//System.out.println("Hello World");
+	}
+}
