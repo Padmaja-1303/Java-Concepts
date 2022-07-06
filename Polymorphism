@@ -1,0 +1,50 @@
+/* //In polymorphism,one object can have multiple references */
+ class Plane
+    {
+        void fly()
+        {
+            System.out.println("Normal Plane");
+        }
+    }
+    class CargoPlane extends Plane
+    {
+        void fly()
+        {
+            System.out.println("cargoPlane");
+        }
+    }
+    class PassengerPlane extends Plane
+    {
+        void fly()
+        {
+            System.out.println("PassengerPlane");
+        }
+    }
+    class FighterPlane extends Plane
+    {
+        void fly()
+        {
+            System.out.println("FighterPlane");
+        }
+    }
+class Main
+{ //In polymorphism,one object can have multiple references
+	public static void main(String[] args) 
+	{   
+	     //Multiple reference variables with same type
+	    CargoPlane cp = new CargoPlane();
+	    PassengerPlane pp = new PassengerPlane();
+	    FighterPlane fp = new FighterPlane();
+	    
+	    Plane ref;
+	    ref = cp;
+	    ref.fly();
+	    
+	    ref = pp;
+	    ref.fly();
+	    
+	    ref=fp;
+	    ref.fly();
+	}
+}
+
