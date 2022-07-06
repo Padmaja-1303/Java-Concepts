@@ -1,4 +1,7 @@
-/**/
+/*To go to the particular folder path , type [cd space foldername]
+   to compile : javac space classname.java
+   to run : java space classname
+   How to save : Within double quotes "classname.java" */
 public class Student1
 {
     int rollno;
