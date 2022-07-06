@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main
+{
+    int rollno;
+    String name;
+    String collegename ="IIT";
+    void set(int r,String s)
+    {
+        rollno = r;
+        name = s;
+    }
+    void put()
+    {
+        System.out.println("rollno:" + rollno);
+        System.out.println("name and college name:" + name +" " + collegename);
+    }
+    
+	public static void main(String[] args) 
+	{
+	    Main m1 = new Main();
+	    m1.set(1,"Ramesh");
+	    m1.put();
+		//System.out.println("Hello World");
+	}
+}
